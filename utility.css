@@ -12,7 +12,9 @@
     display: flex;
  }
  .bg-black{
-    background-color: black;
+   /* background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(33,210,6,1) 35%, rgba(0,8,1,1) 100%); */
+background-color: black;
     color: white;
  }
  .invert{
@@ -31,3 +33,29 @@
  .p-1{
    padding: 15px;
  }
+ /* For WebKit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+   width: 12px; /* Width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+   background: #1e1e1e; /* Dark background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: #444; /* Dark color for the thumb */
+   border-radius: 10px; /* Rounded corners */
+   border: 3px solid #1e1e1e; /* Adds space around the thumb for a neat effect */
+}
+
+/* For Firefox */
+* {
+   scrollbar-width: thin;
+   scrollbar-color: #444 #1e1e1e; /* thumb color, track color */
+}
+
+/* Optional: for IE and Edge */
+body {
+   -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
