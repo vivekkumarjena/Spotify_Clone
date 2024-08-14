@@ -20,6 +20,9 @@ background-color: black;
  .invert{
     filter: invert(1);
  }
+ .pointer{
+   cursor: pointer;
+ }
  .bg-box{
     background-color: #121212;
     color: #b3b3b3;

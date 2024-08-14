@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="utility.css">
 </head>
@@ -13,10 +14,10 @@
     <div class="container flex bg-black">
         <div class="left">
             <div class="home bg-box rounded m-1 p-1">
-                <div class="logo"><img class="invert" src="assets/logo.svg" alt=""></div>
+                <div class="logo"><img class="invert pointer" src="assets/logo.svg" alt=""></div>
                 <ul>
-                    <li class="flex items-center font"><img class="invert" src="assets/home.svg" alt="home">Home</li>
-                    <li class="flex items-center font"><img class="invert" src="assets/search.svg" alt="search">Search
+                    <li class="flex items-center font pointer"><img class="invert pointer" src="assets/home.svg" alt="home">Home</li>
+                    <li class="flex items-center font pointer"><img class="invert pointer" src="assets/search.svg" alt="search">Search
                     </li>
                 </ul>
             </div>
@@ -96,14 +97,24 @@
                 </div>
             </div>
             <div class="playbar">
-                <div class="songinfo"></div>
-                <div class="songbtns">
-                    <img class="pn" src="assets/playbar-prev.svg" alt="">
-                    <img class="pp" src="assets/playbar-play.svg" alt="">
-                    <img class="pn" src="assets/playbar-next.svg" alt="">
+                <div class="songinfo">
+
                 </div>
-                <div class="songtime"></div>
+                <div class="song-controls">
+                    <div class="songbtns">
+                        <img id="previous" class="pn pointer" src="assets/playbar-prev.svg" alt="">
+                        <img id="play" class="pp pointer" src="assets/playbar-play.svg" alt="">
+                        <img id="next" class="pn pointer" src="assets/playbar-next.svg" alt="">
+                    </div>
+                    <div class="seekbar pointer">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="songtime">
+                    
+                </div>
             </div>
+            
         </div>
     </div>
 
